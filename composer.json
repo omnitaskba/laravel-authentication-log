@@ -1,5 +1,5 @@
 {
-    "name": "rappasoft/laravel-authentication-log",
+    "name": "omnitaskba/laravel-authentication-log",
     "description": "Log user authentication details and send new device notifications.",
     "keywords": [
         "rappasoft",
