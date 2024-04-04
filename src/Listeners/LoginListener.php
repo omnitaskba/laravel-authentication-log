@@ -42,6 +42,7 @@ class LoginListener
             $newUser = Carbon::parse($user->{$user->getCreatedAtColumn()})->diffInMinutes(Carbon::now()) < 1;
 
             $log = $user->authentications()->create([
+                'company_id' => $user->currentCompany->id,
                 'ip_address' => $ip,
                 'user_agent' => $userAgent,
                 'login_at' => now(),

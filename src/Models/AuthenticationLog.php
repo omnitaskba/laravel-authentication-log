@@ -24,6 +24,7 @@ class AuthenticationLog extends Model
     protected $table = 'authentication_log';
 
     protected $fillable = [
+        'company_id',
         'ip_address',
         'user_agent',
         'login_at',
