@@ -36,7 +36,7 @@ class FailedLoginListener
             }
 
             $log = $event->user->authentications()->create([
-                'company_id' => $user->currentCompany ? $user->currentCompany->id : null,
+                'company_id' => $event->user->currentCompany ? $user->currentCompany->id : null,
                 'ip_address' => $ip,
                 'user_agent' => $this->request->userAgent(),
                 'login_at' => now(),
